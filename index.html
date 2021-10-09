@@ -1,44 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Cinema Booking Website</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <a href="/">
-        <img src="img/logo.svg" alt="logo">
-      </a>
-      <ul class="nav-menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link">Главная</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Фильмы</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Кинотеатры</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">События</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Поддержка</a>
-        </li>
-      </ul>
-      <div class="user">
-        <span>Привет, user!</span>
-        <img src="img/avatar.svg" alt="avatar" class="avatar">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cinema Booking Website</title>
+  </head>
+  <body>
+    <div>
+      <header class="header-avengers">
+        <div class="navbar">
+          <a href="/">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <ul class="nav-menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Фильмы</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Кинотеатры</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">События</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Поддержка</a>
+            </li>
+          </ul>
+          <div class="user">
+            <span>Привет, user!</span>
+            <img src="img/avatar.svg" alt="avatar" class="avatar" />
+          </div>
+        </div>
+        <!-- /.navbar -->
+        <div class="film container">
+          <div class="film-info">
+            <small class="film-info-small">Avengers: Infinity War</small>
+            <h1 class="film-title">Мстители: война бесконечности</h1>
+            <p class="film-description">
+              Пока Мстители и их союзники продолжают защищать мир от различных
+              опасностей, с которыми не смог бы справиться один супергерой,
+              новая угроза возникает из космоса: Танос. Межгалактический тиран
+              преследует цель собрать все шесть Камней Бесконечности - артефакты
+              невероятной силы, с помощью которых можно менять реальность по
+              своему желанию. Всё, с чем Мстители сталкивались ранее, вело к
+              этому моменту – судьба Земли никогда ещё не была столь
+              неопределённой.
+            </p>
+            <div class="film-details">
+              <div class="time">
+                <img src="/img/clock.svg" alt="time" class="time-icon" />
+                <span>240 мин.</span>
+              </div>
+              <div class="rating">
+                <img src="/img/imdb.svg" alt="" class="rating-icon" />
+                <span class="rating-counter">
+                  <strong class="huge-rating">9.2</strong> / 10
+                </span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="film-trailer">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="50" cy="50" r="50" fill="white" />
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z"
+                  fill="#F20D01"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="41.8013"
+                    height="41.8013"
+                    fill="white"
+                    transform="translate(34.1837 29.0816)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <!--/.film-->
+        <div class="session container">
+          <div class="session-date">
+            <span class="session-label">Дата</span>
+            <div class="session-date-block">
+              <div class="session-date-item">
+                <span class="session-month">АПР</span>
+                <span class="session-day">27</span>
+                <span class="session-week">ПТ</span>
+              </div>
+              <div class="session-date-item">
+                <span class="session-month">АПР</span>
+                <span class="session-day">28</span>
+                <span class="session-week">СБ</span>
+              </div>
+              <div class="session-date-item">
+                <span class="session-month">АПР</span>
+                <span class="session-day">29</span>
+                <span class="session-week">ВС</span>
+              </div>
+              <div class="session-date-item">
+                <span class="session-month">АПР</span>
+                <span class="session-day">30</span>
+                <span class="session-week">ПН</span>
+              </div>
+            </div>
+          </div>
+          <!-- /.session-date -->
+          <div class="sassion-cinema">
+            <span class="session-label">Кинотеатр</span>
+            <select name="select-cinema">
+              <option value="ЦУМ, ул. Крещатик, 38, Киев">
+                ЦУМ, ул. Крещатик, 38, Киев
+              </option>
+              <option value="Проспект, ул. Гната Хоткевича, 1В">
+                Проспект, ул. Гната Хоткевича, 1В
+              </option>
+              <option value="Атмосфера, Столичное шоссе, 103">
+                Атмосфера, Столичное шоссе, 103
+              </option>
+              <option value="Караван, ул. Шептицкого, 4A">
+                Караван, ул. Шептицкого, 4A
+              </option>
+            </select>
+          </div>
+          <!-- /.sassion-cinema -->
+          <div class="sassion-time">
+            <span class="session-label">Время</span>
+            <select name="select-time">
+              <option value="8:15">8:15</option>
+              <option value="12:30">12:30</option>
+              <option value="17:00">17:00</option>
+              <option value="21:30">21:30</option>
+            </select>
+          </div>
+          <!-- /.sassion-time -->
+        </div>
       </header>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
