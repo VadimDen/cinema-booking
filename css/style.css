@@ -164,3 +164,61 @@ option {
   color: #ffffffbb;
   background-color: rgba(120, 54, 38, 0.8);
 }
+.scheme{
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin-top: 60px;
+  align-items: top;
+  top: 0;
+}
+.scheme path:not(.screen){
+  fill: rgba(255, 255, 255, 0.2);
+}
+.scheme path:not(.screen):hover{
+  cursor: pointer;
+  fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked{
+  fill:rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #FE8E05;
+}
+.price{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.price-label{
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price-tag{
+  font-size: 52px;
+  line-height: 61px;
+}
+.button-pay{
+  color: white;
+  display: block;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #FE8E05;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
