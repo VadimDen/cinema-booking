@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
     <title>Cinema Booking Website</title>
   </head>
   <body>
@@ -20,6 +21,14 @@
         <a href="/">
           <img src="img/logo.svg" alt="logo" />
         </a>
+        <nav class="nav">
+          <button class="mob-menu">
+          <svg viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="0.5" x2="14.5" y2="0.5" stroke="white" stroke-linecap="round"/>
+            <line x1="0.5" y1="3.5" x2="14.5" y2="3.5" stroke="white" stroke-linecap="round"/>
+            <line x1="0.5" y1="6.5" x2="14.5" y2="6.5" stroke="white" stroke-linecap="round"/>
+          </svg>
+        </button>
         <ul class="nav-menu">
           <li class="menu-item">
             <a href="#" class="menu-link">Главная</a>
@@ -37,6 +46,7 @@
             <a href="#" class="menu-link">Поддержка</a>
           </li>
         </ul>
+        </nav>
         <div class="user">
           <span>Привет, user!</span>
           <img src="img/avatar.svg" alt="avatar" class="avatar" />
@@ -69,7 +79,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="film-trailer">
+        <a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8" href="#" class="film-trailer">
           <svg
             width="100"
             height="100"
@@ -125,7 +135,7 @@
           </div>
         </div>
         <!-- /.session-date -->
-        <div class="sassion-cinema">
+        <div class="session-cinema">
           <span class="session-label">Кинотеатр</span>
           <select name="select-cinema">
             <option value="ЦУМ, ул. Крещатик, 38, Киев">
@@ -143,7 +153,7 @@
           </select>
         </div>
         <!-- /.sassion-cinema -->
-        <div class="sassion-time">
+        <div class="session-time">
           <span class="session-label">Время</span>
           <select name="select-time">
             <option value="8:15">8:15</option>
@@ -158,8 +168,6 @@
     <div class="scheme container">
       <svg
         class="scheme-svg"
-        width="1170"
-        height="686"
         viewBox="0 0 1170 686"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -825,6 +833,7 @@
       <button class="button-pay">Перейти к оплате</button>
     </div>
     <!-- /.price -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

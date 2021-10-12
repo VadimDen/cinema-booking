@@ -9,11 +9,14 @@ body {
 .header-avengers{
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
   url('../img/bg.jpg') no-repeat center top / cover;
-  min-height: 100vh;
+  padding-bottom: 60px;
 }
 .container{
   width: 1170px;
   margin: auto;
+}
+.nav{
+  position: relative;
 }
 .navbar {
   width: 1170px;
@@ -167,9 +170,10 @@ option {
 .scheme{
   background: rgba(36, 36, 36, 0.18);
   border-radius: 10px;
-  margin-top: 60px;
   align-items: top;
-  top: 0;
+}
+.scheme-svg{
+  max-width: 1170px;
 }
 .scheme path:not(.screen){
   fill: rgba(255, 255, 255, 0.2);
@@ -221,4 +225,101 @@ option {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+}
+.mob-menu{
+  display: none;
+}
+@media (max-width: 1200px){
+  .container, .navbar{
+    max-width: 960px;
+  }
+}
+@media (max-width: 995px) {
+
+  .container,
+  .navbar {
+    max-width: 750px;
+  }
+  .session{
+    flex-wrap: wrap;
+  }
+  .session-date{
+    flex-basis: 70%;
+  }
+  .session-time{
+    order: 2;
+  }
+  .session-cinema{
+    order: 3;
+    margin-top: 40px;
+  }
+  .menu-item{
+    margin-right: 15px;
+  }
+}
+@media (max-width: 770px){
+  .container,
+  .navbar{
+    max-width: 560px;
+  }
+  .nav-menu{
+    position: absolute;
+    left: 0;
+    top: 40;
+    padding: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    background-color: #621402;
+    z-index: 9;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-25%);
+    transition: opacity 0.5s, transform 0.2s;
+  }
+  .menu-item:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .mob-menu{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 25px;
+    margin-left: 20px;
+    cursor: pointer; 
+  }
+}  
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.film-description {
+    margin-right: 30px;
+}
+.film{
+  flex-direction: column;
+}
+.film-trailer{
+  margin-top: 30px;
+}
+@media(max-width: 600px){
+  .container,
+  .navbar{
+    max-width: 90%;
+  }
+  .session-time {
+    order: 3;
+    margin-top: 40px;
+  }
+  .session-cinema {
+    order: 2;
+  }
+  .session-date{
+    min-width: 100%;
+  }
+  .button-pay{
+    padding: 12px 26px;
+  }
 }
